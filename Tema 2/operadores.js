@@ -86,9 +86,21 @@ while(repetir){
 
 */
 
-//15.
+/*15.
+let num = 0;
+num = prompt("Introduce un número del 1 al 10")
 
+if(num>10 || num<0){
+    num = prompt("Introduzca un número válido")
+}
 
+for(let i = 0; i<=10;i++){
+    document.getElementById("parrafo").innerHTML += num + '*' + i + " = "  + num*i + '<br>'
+}
 
+*/
 
+//16.
+
+let palabra = prompt("Introduce una fruta")
 
