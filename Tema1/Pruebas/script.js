@@ -34,7 +34,18 @@
 
     let nombre = prompt("Nombre:")
     let apellidos = prompt("Apellidos:")
-    let edad1 = Number(prompt("Edad:")) 
+    let edad1 = Number(prompt("Edad:"))
+    
 
     console.log(nombre, apellidos, edad1)
+
+    let frase = "Nombre: " + nombre + " Apellidos: " + apellidos + " Edad:" + edad1
+    document.getElementById("datos").innerHTML = frase
+
+    let edadnueva = edad1+10
+    let frase2 = "Edad dentro de 10 años: " + edadnueva
+    document.getElementById("edadnueva").innerHTML = frase2
+
+//4.
+
     
