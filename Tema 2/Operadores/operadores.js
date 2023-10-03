@@ -100,7 +100,57 @@ for(let i = 0; i<=10;i++){
 
 */
 
-//16.
+/*16.
 
 let palabra = prompt("Introduce una fruta")
 
+switch(palabra) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+}
+*/
+
+//Ej 20
+
+function suma1() {
+    let resultado = 0;
+  
+    for (let i = 0; i < arguments.length; i++) {
+      resultado += arguments[i];
+    }
+  
+    return resultado;
+  }
+  
+  // Ejemplo de uso
+  console.log(suma1(1, 2, 3,342343, 324,4532)); // Resultado: 6
+  console.log(suma1());
+
+let suma2 = function(){
+    let resultado = 0;
+    for(let i = 0;i<arguments.length;i++){
+        resultado +=arguments[i];
+    }
+
+    return resultado
+}
+
+console.log(suma2(1,1,4,2,6,23,6))
+console.log(suma2(0))
+
+let suma3 = (...args) => {
+    let resultado = 0;
+    for(let i = 0;i<args.length;i++){
+        resultado +=args[i];
+    }
+    return resultado
+};
+
+console.log(suma3(1,1,1))
+console.log(suma3())
