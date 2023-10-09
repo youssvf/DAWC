@@ -14,7 +14,7 @@ let suma = array.reduce((suma, actual) => suma + actual);
 alert(suma)
 */
 
-const numeros = [1,2,3,4,5,6]
+/*const numeros = [1,2,3,4,5,6]
 const pares = []
 
 let cuantosPares = 0;
@@ -27,4 +27,5 @@ let contadorPares = numeros.reduce((cuantosPares, numeroActual) =>{
 
 alert(numeros)
 alert(contadorPares)
-alert(pares)
+alert(pares) */
+
