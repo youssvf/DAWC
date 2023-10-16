@@ -1,0 +1,17 @@
+.parrafo1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.parrafo2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    text-align:  right;
+}
+
+.parrafo2 > span{
+    color: rgb(3, 243, 123);
+}
+.parrafo3{
+    font-family: 'Ubuntu' , sans-serif;
+    text-align: center;
+}
