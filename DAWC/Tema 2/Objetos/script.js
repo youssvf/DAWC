@@ -16,6 +16,8 @@
 // sessionStorage.setItem("nombre", "pedro")
 // alert(sessionStorage.getItem("apellido"))
 
+
+
 class Cancion{
     constructor (titulo, autor, duracion){
     this.titulo = titulo
@@ -38,15 +40,18 @@ class Disco{
     }
     
     mostrarCanciones(){
-        console.log('Canciones de ${this.artista}:')
+        document.write('<ul>')
         this.canciones.forEach((cancion, index) => {
-      console.log(`${index + 1}. ${cancion.titulo} - ${cancion.autor} (${cancion.duracion})`);
-    }); 
+      document.write('<li>' + cancion.titulo + ", " +  cancion.autor + ", ("+ cancion.duracion +") </li>");
+    });
+    document.write('</ul>')
     }
 
-    añadirCancion(cancion){
-        this.canciones.push(cancion)
-        console.log()
+    añadirCancion(){
+        let titulo = prompt("Titulo:")
+        let autor = prompt("Autor:")
+        let duracion = prompt("Duracion")
+        this.canciones.push(new Cancion(titulo,autor,duracion))
     }
 
     eliminarCancion(titulo){
@@ -59,13 +64,61 @@ class Disco{
 
 }
 
+const coleccion = []
+
+function anyadirDisco(){
+    let nombre  = prompt("Nombre:")
+    let artista = prompt("Artista:")
+    let añoPublicacion = prompt("Año de publicacion:")
+    let estilo = prompt("Estilo:")
+    coleccion.push(new Disco(nombre,[],artista,añoPublicacion,estilo))
+    }
+
+function eliminarDisco(nombre){
+    this.discos.forEach((disco,index)=> {
+        if(disco.nombre == nombre){
+            coleccion.splice(index,1)
+        }
+    })
+}
+
+function mostrarCollection(){
+    document.write('<h3>Colleción de discos</h3>' + '<ul>')
+    coleccion.forEach((disco,index)=>{
+        document.write('<li>' + disco.nombre  + ". Artista: " + disco.artista + " Año de publicación:" + disco.añoPublicacion + " Estilo:"  + disco.estilo +'</li>')
+    })
+    document.write('</ul>')
+}
+
 let cancion1 = new Cancion("cancion1","autor1","1'")
 let cancion2 = new Cancion("cancion2","autor2","2'")
 
 let disco1 = new Disco("disco1",[cancion1,cancion2], "messi","1982","Punk")
-disco1.mostrarCanciones()
-disco1.eliminarCancion(cancion2)
-disco1.mostrarCanciones()   
+let disco2 = new Disco("disco2",[cancion1,cancion2],"elbicho","2026","Pop")  
 
+let respuesta = prompt("1-Añadir nuevo disco 2-Añadir canciones a un disco 3-Eliminar Disco 4-Guardar y Salir 5-Salir")
 
+// switch(respuesta){
+//     case "1":
+//         coleccion.anyadirDisco()
+//         coleccion.mostrarCollection()
+//     break;
 
+//     case "2":
+        
+//     break;     
+// }
+
+if(respuesta == 1){
+    anyadirDisco()
+} else if(respuesta ==2){
+    let discobuscado = prompt("Nombre del disco")
+    const indicedisco = coleccion.findIndex((disco)=> disco.nombre === discobuscado)
+    if(indicedisco !== -1){
+        anyadirDisco()
+    }else {
+        alert("Eroro")
+    }
+}
+
+mostrarCollection()
