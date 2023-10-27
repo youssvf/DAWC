@@ -1,0 +1,37 @@
+.itemoculto {   
+    display: none;
+}
+
+header {
+    width: 95%;
+    margin: auto;
+    padding: 1%;
+}
+
+article {
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #3c515d;      
+}
+    
+article > p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+article > img {
+    align-items: center;
+    width: 55%;
+}
+
+.contenedor {
+    display: grid;
+    
+}
+
+.item {
+    border: 1px solid #a7c686;
+}
+
