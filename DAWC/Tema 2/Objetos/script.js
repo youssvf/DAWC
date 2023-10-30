@@ -98,16 +98,7 @@ let disco2 = new Disco("disco2",[cancion1,cancion2],"elbicho","2026","Pop")
 
 let respuesta = prompt("1-Añadir nuevo disco 2-Añadir canciones a un disco 3-Eliminar Disco 4-Guardar y Salir 5-Salir")
 
-// switch(respuesta){
-//     case "1":
-//         coleccion.anyadirDisco()
-//         coleccion.mostrarCollection()
-//     break;
 
-//     case "2":
-        
-//     break;     
-// }
 
 if(respuesta == 1){
     anyadirDisco()
@@ -117,8 +108,18 @@ if(respuesta == 1){
     if(indicedisco !== -1){
         anyadirDisco()
     }else {
-        alert("Eroro")
+        alert("Error")
     }
+} else if(respuesta == 3){
+    let discobuscado = prompt("Nombre del disco a borrar:")
+    const indicedisco = coleccio.findIndex((disco)=> disco.nombre === discobuscado)
+    if(indicedisco !== -1){
+        eliminarDisco(discobuscado)
+    } else {
+        alert("Error al borrar disco")
+    }
+} else if(respuesta == 4){
+    let mejorjugadordelmundo = prompt("Quien es el mejor jugador del nudo")
 }
 
 mostrarCollection()
