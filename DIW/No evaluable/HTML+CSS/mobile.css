@@ -1,11 +1,27 @@
-.itemoculto {   
+.itemocultonav {   
+    display: none;
+}
+
+.joyapordescubrir{
     display: none;
 }
 
 header {
     width: 95%;
-    margin: auto;
     padding: 1%;
+    margin: auto;
+}
+
+header h1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    font-family: 'Lato' sans-serif;
+    font-size: 0.9em;
 }
 
 article {

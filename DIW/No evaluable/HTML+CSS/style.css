@@ -6,7 +6,7 @@ header {
 h1 {
     text-align: center;
     font-family: 'Lobster', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     color:#3D6868;
 }
 
@@ -31,4 +31,22 @@ nav {
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* You can adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+article img{
+    width: 55%;
+}
+
+article{
+    display: flex;
+}
+
+
 

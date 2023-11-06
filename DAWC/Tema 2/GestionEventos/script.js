@@ -1,5 +1,3 @@
-
-
 class Persona{
     constructor(nombre, email){
         this.nombre =nombre;
@@ -124,7 +122,6 @@ function borrarEventosPasados(){
         }
     })
 }
-<<<<<<< HEAD
 
 function desactivarAlertas(nombre){
     agenda.forEach((evento)=>{
@@ -149,32 +146,6 @@ function modificarEvento(nombre){
 
             const invitado = new Persona(nombreinvitado,email);
 
-=======
-
-function desactivarAlertas(nombre){
-    agenda.forEach((evento)=>{
-        if(evento.nombre == nombre){
-            evento.alertas.forEach((alerta)=>{
-                clearTimeout(alerta.timerId);   
-            })
-            alert(`Alertas de ${evento.nombre} desactivadas`)
-        }
-    })
-}
-
-function modificarEvento(nombre){
-    agenda.forEach((evento)=>{
-        if(evento.nombre == nombre){
-            evento.nombre = prompt('Nuevo nombre evento:');
-            evento.lugar = prompt('Nuevo lugar');
-            evento.fechahora = prompt('Nueva fecha');
-
-            let nombreinvitado = prompt('Nombre del invitado');
-            let email = prompt('Email del invitado');
-
-            const invitado = new Persona(nombreinvitado,email);
-
->>>>>>> 682985ca9184df54b2c70efddb8086769547809d
             evento.invitados.push(invitado);
 
             let fechaalerta = prompt('Fecha de la nueva alerta')
@@ -200,11 +171,8 @@ function modificarEvento(nombre){
 // agregarEvento(evento2);
 
 
-<<<<<<< HEAD
 // guardarAgenda();
 
-=======
->>>>>>> 682985ca9184df54b2c70efddb8086769547809d
 
 
 
@@ -222,64 +190,10 @@ function modificarEvento(nombre){
 //     }
 // })
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 682985ca9184df54b2c70efddb8086769547809d
 const agenda = [];
 
-
-
-
-
-let menu = true;
-while(menu){
-    let respuesta = prompt('1- Crear evento 2-Añadir invitados  3-Añadir alertas  4-Mostrar eventos  5-Borrar evento  6-Borrar eventos pasado  7-Modificar evento  8-Desactivar alertas  9-Cargar Agenda  10-Guardar Agenda');
-    
-    switch(respuesta){
-    case '1' :
-        crearEvento();
-    break;
-
-    case '2':
-        let nombreevento = prompt('Nombre del evento')
-        agenda.forEach((evento)=>{
-            if(evento.nombre == nombreevento){
-                evento.agregarInvitado();
-            } else {
-                alert('Evento no encontrado');
-            }
-    });
-    break;
-
-    case '3':
-        let eventobuscado = prompt('Nombre del evento')
-        agenda.forEach((evento)=>{
-            if(evento.nombre == eventobuscado){
-                evento.agregarAlerta();
-            } else {
-                alert('Evento no encontrado');
-            }
-    });
-    break;
-
-    case '9':
-        agenda = cargarAgenda();
-        mostrarEventos();
-        
-    break;
-
-    case '10':
-        guardarAgenda();
-    break;
-
-    case '0' :
-        menu = false;
-    break;
-}
-}
-
-
+cargarAgenda();
 
 
 
@@ -288,7 +202,7 @@ while(menu){
     let respuesta = prompt('1- Crear evento 2-Añadir invitados  3-Añadir alertas  4-Mostrar eventos  5-Borrar evento  6-Borrar eventos pasado  7-Modificar evento  8-Desactivar alertas  9-Cargar Agenda  10-Guardar Agenda 0-Salir');
     switch(respuesta){
     case '1' :
-        crearEvento();9191
+        crearEvento();
     break;
 
     case '2':
