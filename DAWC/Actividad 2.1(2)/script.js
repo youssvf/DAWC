@@ -43,7 +43,8 @@ class Evento{
         const now = new Date();
         this.alertas.forEach((alerta)=>{
             if(alerta.fecha>now){
-                const tiemporestante = this.fecha - now;
+                const tiemporestante = alerta.fecha - now;
+                console.log(tiemporestante)
                 alerta.timerID = setTimeout(()=>{
                     alert(alerta.mensaje)
                 },tiemporestante);
@@ -110,6 +111,7 @@ class Agenda{
                 });
                 document.write(`</ul>`);
         });
+        this.guardarAgenda();
     }
 
     borrarEvento(){
@@ -165,10 +167,14 @@ class Agenda{
 
     cargarAgenda(){
         const agendaLS = JSON.parse(localStorage.getItem("agenda"));
-        agendaLS.forEach((evento)=>{
+        if(agendaLS){
+            agendaLS.forEach((evento)=>{
             this.eventos.push(new Evento(evento.nombre,evento.fecha,evento.lugar,evento.invitados,evento.alertas));
+            this.eventos.forEach((evento)=> evento.activarAlertas());
         });
-        this.eventos.forEach((evento)=> evento.activarAlertas());
+        } else {
+            this.eventos = [];
+        }
     }
 
     ejecutar(){
