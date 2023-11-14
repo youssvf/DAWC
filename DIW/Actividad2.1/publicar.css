@@ -1,0 +1,62 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navprincipal{
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.bloque{
+    width: 100%;
+    height: auto;
+    background-image: url(12_50.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.marco{
+    padding: 100px;
+    width: 70%;
+    height: auto;
+    background-color: grey;
+    
+}
+
+.contenedorgrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.etiquetas{
+    margin: 20px;
+    text-align: center;
+}
+
+.botonpublicar{
+    text-align: center;
+}
+
+
+
+
+
+label{
+    font-size: larger;
+}
+
+select{
+    width: 80%;
+    font-size: larger;
+}
+
+
