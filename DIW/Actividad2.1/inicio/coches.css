@@ -1,5 +1,31 @@
- 
 
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 780px) {
+    
+
+    .navprincipal {
+        align-items: flex-start; /* Alinear al inicio */
+    }
+
+    nav a {
+        font-size: 1.5em; /* Reducir tamaño de fuente */
+    }
+
+    
+    .vertical {
+        width: 20%; /* O ajusta según tus necesidades */
+    }
+
+    .coches{
+        width: 100%;
+    }
+
+    .coches select {
+        width: 100%; /* O ajusta según tus necesidades */
+    }
+
+    /* Otros estilos para dispositivos móviles aquí... */
+}
 nav{
     display: flex;
     justify-content: space-between;

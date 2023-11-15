@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("parrafo").innerText = `La posicion es: ${event.screenX}x${event.screenY}`;
 })
 })
-
+    
 
 //4. Mostrar un alert con la tecla que se ha pulsado. Indicar también si estaba pulsada simultáneamente la tecla Alt o la tecla Ctrl
 //5. Mostrar un texto en un párrafo con las dimensiones de la ventana cada vez que es redimensionada .

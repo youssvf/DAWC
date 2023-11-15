@@ -42,13 +42,22 @@ label {
 }
 
 button{
+    border-radius: 40%;
+    border: none;
+    width: 20%; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
     background-color: #7A7A7A;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-weight: bold;
-    font-size: 20px;
-    width: 80%;
-    height: 20%;
+}
+
+button a{
+    text-decoration: none;
 }
 
 input {
