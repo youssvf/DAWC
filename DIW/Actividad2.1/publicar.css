@@ -2,6 +2,10 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+img{
+    width: auto;
+    height: 100%;
+}
 
 .navprincipal{
     align-items: center;
@@ -15,40 +19,39 @@ nav a{
 
 .bloque{
     width: 100%;
-    height: auto;
-    background-image: url(12_50.jpg);
+    height: 100%;
+    background-image: url(image\ 1.png);
     background-size: cover;
     background-position: center;
-    
-    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .marco{
-    padding: 100px;
+    padding: 40px;
     width: 70%;
+    margin: 30px;
     height: auto;
-    background-color: grey;
-    
+    background-color: #dcdcdc;
 }
 
 .contenedorgrid{
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
 
 .etiquetas{
     margin: 20px;
+}
+
+.upload{
     text-align: center;
 }
 
 .botonpublicar{
     text-align: center;
 }
-
-
-
-
 
 label{
     font-size: larger;
@@ -59,4 +62,24 @@ select{
     font-size: larger;
 }
 
+@media (max-width:600px){
+    .contenedorgrid{
+        grid-template-columns: 100%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navprincipal{
+        align-items: center;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
+}
 
