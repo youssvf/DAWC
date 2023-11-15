@@ -1,31 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 780px) {
-    
-
-    .navprincipal {
-        align-items: flex-start; /* Alinear al inicio */
-    }
-
-    nav a {
-        font-size: 1.5em; /* Reducir tamaño de fuente */
-    }
-
-    
-    .vertical {
-        width: 20%; /* O ajusta según tus necesidades */
-    }
-
-    .coches{
-        width: 100%;
-    }
-
-    .coches select {
-        width: 100%; /* O ajusta según tus necesidades */
-    }
-
-    /* Otros estilos para dispositivos móviles aquí... */
+*{
+    font-family: 'Lexend';
 }
+/* Media query para dispositivos móviles */
+    @media screen and (max-width: 780px) {
+        .contenido{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vertical{
+            width: 30%;
+            height: auto;
+            flex-direction: row;
+        }
+
+    }
 nav{
     display: flex;
     justify-content: space-between;
@@ -39,6 +30,7 @@ nav a{
     text-decoration: none;
     color: black;
     font-size: 2em;
+    font-weight: bold;
 }
 
 hr{
@@ -47,6 +39,7 @@ hr{
 
 .contenido{
     display: flex;
+    
 }
 
 .vertical{
