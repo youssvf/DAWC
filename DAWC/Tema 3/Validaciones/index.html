@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validaciones</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <form name="formulario">    
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <span id="errornombre"></span>
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <span id="errorapellidos"></span>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni">
+        <span id="errordni"></span>
+        <br>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="text" name="contraseña" id="contraseña">
+        <br>
+        <label for="contraseña2">Repetir contraseña</label>
+        <input type="text" name="contraseña2" id="contraseña2">
+        <br>
+        <label for="avisos">Desea recibir avisos comerciales</label>
+        <input type="checkbox" name="avisos" id="avisos">
+        <br>
+        <button type="submit" onsubmit="return validarnombre()">Registrarse</button>
+        </form>
+    </body>
+</html>

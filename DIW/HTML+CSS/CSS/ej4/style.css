@@ -1,0 +1,50 @@
+header, footer {
+    background-color: beige;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+section {
+    order: 2;
+    background-color: bisque;
+    flex-basis: 52%;
+}
+
+nav {
+    order: 1;
+    background-color: burlywood;
+    flex-basis: 14%;
+     
+}
+
+aside {
+    order: 3;
+    background-color: blanchedalmond;
+    flex-basis: 24%;
+}
+
+section, aside, nav {
+    padding: 10px;
+}

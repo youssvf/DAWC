@@ -1,0 +1,52 @@
+header {
+    text-align: center  ;
+    background-color: #A7C686;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-size: 3em;
+    color:#3D6868;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #3D6868;
+}
+
+nav > a {
+    font-family: 'Lato', sans-serif;
+    color: #40957F;
+}
+
+header > span {
+    background-color: #FCEE8C;
+}
+
+nav {
+    background-color: #3D6868;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* You can adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+article img{
+    width: 55%;
+}
+
+article{
+    display: flex;
+}
+
+
+
