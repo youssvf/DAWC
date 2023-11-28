@@ -4,7 +4,7 @@ class Invitado{
         this.email = email;
     }
 }
-
+//
 class Alerta{
     constructor(fecha,mensaje,timerID){
         this.fecha = new Date(fecha);
