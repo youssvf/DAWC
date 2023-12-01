@@ -65,8 +65,6 @@ function validarDNI(e){
     const letra = input.value.slice(8,9);
     alert(numeros + letra);
     const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-    if(numeros%23 == ){
-
-    }
+    
 }
 

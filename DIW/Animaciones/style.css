@@ -1,0 +1,49 @@
+.elemento{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    transition: background-color 2s;
+}
+.elemento:hover{
+    background-color: red;
+}
+
+.font{
+    font-size: 16px;
+    transition: font-size 2s linear 1s;
+}
+
+.font:hover{
+    font-size: 24px;
+}
+
+.opacidad{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.opacidad:hover{
+    opacity: 0.5;
+}
+
+.rotado{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    rotate: 0deg;
+    transition: rotate 1s ease-in-out;
+    /* transition-timing-function: cubic-bezier(0.44, 0, 0.58, 1); */
+}
+
+.rotado:hover{
+    rotate:360deg;
+}
+
+.circulo{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: 0vw;
+    transition: transform 5s;
+}
