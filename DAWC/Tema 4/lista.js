@@ -64,10 +64,6 @@ function pintarListas(listas){
     });
 }
 
-
-
-
-
 function saveLista(){
     let id = prompt('id lista');
     let data = {
