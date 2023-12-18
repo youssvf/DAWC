@@ -1,5 +1,41 @@
-const URL_SERVER ="http://54.91.187.28:3000/";
-document.addEventListener("DOMContentLoaded",cargarListas,{once:true})
+const URL_SERVER ='http://34.229.90.4:3000/';
+document.addEventListener("DOMContentLoaded",getListas);
+
+
+function cargarListas(){
+    fetch(URL_SERVER+"listas")
+        .then(response =>{
+                if(response.ok){//Si considero la respuesta correcta
+                return response.json();
+                } else{
+                    //Aqui no me gusta la respuesta del servidor. 
+                    //Opcion de lanzar un error, ojo, si no lo hago continua con el then siguiente
+                }
+            })
+        .then(data => {
+            //Aqui tengo lso datos en formato objet parseado del json recibido
+            pintarListas(data)
+        })
+        .catch(error=>{
+            //Gestion de errores
+            console.error(error);
+        })
+}
+
+
+function getListas() {
+    fetch(URL_SERVER+'listas').then(response => {
+        if(response.ok){
+            return response.json();
+        } else {
+            console.error('error servidor');
+        }
+    }).then(data => {
+        pintarListas(data);
+    }).catch(error => {
+        console.error(error);
+    })
+}
 
 function pintarListas(listas){
     listas.forEach(element => {
@@ -12,7 +48,7 @@ function pintarListas(listas){
         const botonBorrarLista=document.createElement("button");
         const botonEliminarTarea=document.createElement("button");
         botonAddTarea.innerText="Añadir Tarea";
-        botonAddTarea.addEventListener("click", añadirTarea);
+        botonAddTarea.addEventListener("click", saveLista);
         botonBorrarLista.textContent="Borrar Lista";
         botonBorrarLista.addEventListener("click", borrarListaServidor);
         botonEliminarTarea.innerText="Eliminar Tarea";
@@ -28,32 +64,33 @@ function pintarListas(listas){
     });
 }
 
-function ejemploGet() {
-    
-}
 
-function cargarListas(){
-    fetch(URL_BASE + "listas")
-        .then(response => {
-            if (response.ok) {//Si considero la respuesta correcta
-                return response.json();
-            } else {
-                //Aqui no me gusta la respuesta del servidor. 
-                //Opcion de lanzar un error, ojo, si no lo hago continua con el then siguiente
-            }
-        })
+
+
+
+function saveLista(){
+    let id = prompt('id lista');
+    let data = {
+        "id": id,
+        "nombreLista": "Lista",
+        "tareas": []
+    }
+
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+
+    fetch(URL_SERVER + 'listas', options)
+        .then(response => { throw new Error(error) })
         .then(data => {
-            //Aqui tengo lso datos en formato objet parseado del json recibido
-            console.log(typeof data, data);
+            console.log(data);
+        }).catch(error => {
+            console.error('errorrr');
         })
-        .catch(error => {
-            //Gestion de errores
-            console.error(error);
-        })
-}
-
-function añadirListaNueva(){
-
 }
 
 function borrarListaServidor(){
