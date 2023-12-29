@@ -1,0 +1,13 @@
+img, svg{
+    width: 20vw;
+    height: auto;
+}
+
+#receta{
+    height: 40vh;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+}
