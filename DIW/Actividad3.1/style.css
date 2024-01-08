@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+}
+
+body, html {
+    scroll-behavior: smooth; /* Esto hace que el desplazamiento sea suave */
+    transition: scroll-behavior 0.3s ease-in-out; /* Añade una transición suave a la propiedad scroll-behavior */
+}
+  
+
+.escudo{
+    text-align: center;
+    width: auto;
+}
+
+#realmadrid{
+    width: 12vw;    
+}
+
+#realmadrid:hover{
+    transition: 0.5s;
+    scale: 1.05;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a{
+    margin: 1vi;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-size: 1vi;
+    font-weight: bolder;
+}
+
+.nav a:hover{
+    transition: 1s;
+    transform: scale(1.05);
+    color: rgba(21, 80, 168, 0.815);
+}
+
+.noticias{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.principal{
+    border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cr7:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+#cr7{
+    border-radius: 2%;
+    object-fit:cover;
+}
+
+#titulonoticia{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.partidos{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+
+    
+}
+
+.partido{
+    width: 20vw;
+    display: flex;
+    background-color: rgb(48, 124, 236);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3%;
+    
+}
+
+.partido:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.partido img{
+    width: 5vw;
+}
+
+
+.competicion img{
+    width: 3vw;
+}
+
+#scrollIndicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #007BFF;
+    z-index: 1000;
+    transition: width 0.3s ease;
+    width: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.championsleague{
+    margin: 30px;
+}
+
+.logochampions{
+    display: flex;
+    justify-content: center;
+}
+
+#logochampions{
+    width: 10vw;
+}
+
+body{
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    scroll-behavior: smooth; 
+    scroll-snap-type: y mandatory; 
+}
+
+
+section{
+    scroll-snap-align: center;
+    min-height: 100vh;
+}
+
+.champions{
+    background-color: blue;
+}
+
+.laliga{
+    text-align: center;
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#belli{
+    width: 25vw;
+}
+
+h3{
+    opacity: 0.6;
+}
+
+#dorsal{
+    width: 30vw;
+}
+
+#trofeo{
+    width: 18vw;
+}
+
+iframe{
+    border-radius: 2%;
+    transition: 1s;
+}
+
+iframe:hover{
+    scale: 1.05 ;
+}
+
+
+.copadelrey{
+    background-color: rgba(236, 94, 94, 0.767);
+}
+
+.mundial{
+    background-color: rgb(189, 175, 175);
+}
