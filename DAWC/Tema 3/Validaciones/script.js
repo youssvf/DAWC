@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 
-
 function validarnombre(e){
     const input = document.getElementById("nombre");
     const spanError = document.getElementById("errornombre");
@@ -36,7 +35,6 @@ function validarApellido(e){
         input.value = textomayus.join(' ');
     }
 
-    
 }
 
 function validarEmail(e){
