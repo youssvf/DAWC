@@ -152,7 +152,7 @@ section{
 }
 
 .champions{
-    background-color: blue;
+    background-color: rgb(105, 105, 253);
 }
 
 .laliga{
@@ -189,6 +189,35 @@ iframe{
 
 iframe:hover{
     scale: 1.05 ;
+}
+
+.himnochampions{
+    margin: 1vw;
+    
+}
+
+audio {
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+audio::-webkit-media-controls-play-button {
+   background-color:  #3498db;
+   border-radius: 50%;
+}
+
+.champions div{
+    text-align: center;
+}
+
+.contenidochampions{
+    margin: 3vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cr7champions{
+    height: 30vh;
 }
 
 
