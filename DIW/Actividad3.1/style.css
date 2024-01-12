@@ -53,7 +53,7 @@ html {
     border-radius: 2%;
     overflow: hidden;
     position: relative;
-    
+
 }
 
 #cr7 {
@@ -63,7 +63,7 @@ html {
 }
 
 #cr7:hover {
-    scale:1.05;
+    scale: 1.05;
 }
 
 #titulonoticia {
@@ -81,26 +81,30 @@ html {
 
 .partidos-carrusel {
     display: flex;
-    gap: 20px   ;
-  }
-  
-  @keyframes desplazarCarrusel {
+    gap: 20px;
+}
+
+@keyframes desplazarCarrusel {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     25% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     50% {
-      transform: translateX(-200%);
+        transform: translateX(-200%);
     }
+
     75% {
-      transform: translateX(-300%);
+        transform: translateX(-300%);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 .partido {
     text-align: center;
@@ -232,10 +236,10 @@ audio::-webkit-media-controls-play-button {
 }
 
 .contenidochampions {
-    gap: 15px   ;
+    gap: 15px;
     margin: 3vw;
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -248,22 +252,22 @@ audio::-webkit-media-controls-play-button {
     border-radius: 10%;
 }
 
-#santiagobernabeu{
+#santiagobernabeu {
     width: 40vw;
     height: auto;
     border-radius: 5%;
     transition: 1s;
 }
 
-#santiagobernabeu:hover{
+#santiagobernabeu:hover {
     scale: 1.05;
 }
 
-#balon{
+#balon {
     transition: 1s;
 }
 
-#balon:hover{
+#balon:hover {
     scale: 1.1;
 }
 
@@ -291,7 +295,7 @@ audio::-webkit-media-controls-play-button {
     align-items: center;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out;
-    opacity: 1; /* Añadido */
+    opacity: 1;
 }
 
 #loader img {
@@ -303,6 +307,7 @@ audio::-webkit-media-controls-play-button {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -337,9 +342,6 @@ audio::-webkit-media-controls-play-button {
     transform: translateY(0);
 }
 
-.video{
+.video {
     margin: 30px;
 }
-
-
-
